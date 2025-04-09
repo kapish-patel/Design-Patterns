@@ -25,6 +25,4 @@ class Others(Notification):
             db.setValue(serviceName, newOthernotificationType)
 
             return(self.sendNotification(serviceName, recipientName, message))
-
-        # save the notification service 
          
