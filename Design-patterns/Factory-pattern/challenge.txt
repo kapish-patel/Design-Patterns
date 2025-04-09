@@ -1,0 +1,31 @@
+🚀 Challenge: Build a Notification System using the Factory Pattern
+Imagine you are developing a SaaS platform that needs to send notifications to users via Email, SMS, and Push notifications. The system should be scalable so that in the future, new notification channels (like WhatsApp, Slack, Telegram) can be added without modifying the existing code.
+
+🔹 Requirements:
+Use the Factory Pattern to create different notification senders dynamically.
+
+Implement at least Email, SMS, and Push notification types.
+
+Allow new notification types to be added without modifying the existing notification sender logic.
+
+The system should accept a message and recipient details, then send the notification using the correct channel.
+
+Bonus: Store notification logs in a list or database for record-keeping.
+
+🔹 Expected Output Example:
+Enter notification type (email/sms/push): email
+Enter recipient: john@example.com
+Enter message: Your invoice is ready!
+✅ Sent Email to john@example.com: Your invoice is ready!
+🔹 Bonus Challenges (Optional, for extra difficulty)
+💡 Level 1: Add WhatsApp and Slack notifications dynamically.
+💡 Level 2: Implement a notification queue to handle multiple messages at once.
+💡 Level 3: Store sent notifications in a SQLite database and retrieve logs.
+
+🚀 Why This Challenge?
+Real-world use case (many apps use notifications).
+
+Helps understand dynamic object creation with a scalable architecture.
+
+Useful if you later build a SaaS product with customer notifications.
+
