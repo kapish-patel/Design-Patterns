@@ -22,6 +22,11 @@ def main():
     print("Mobs are attacking the player")
     for mob in mobs:
         mob.attack(player)
+    
+    # zombie changes its attack strategy
+    print("Zombie is too near to you its is exploding")
+    mobs[0].set_strategy(attackStrategyFactory.get_attack_strategy("creeper"))
+    mobs[0].attack(player)
 
 
 
