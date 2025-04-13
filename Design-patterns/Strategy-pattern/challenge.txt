@@ -1,0 +1,44 @@
+🎮 Challenge: Implement Enemy Attack Strategies in Minecraft-style World
+🧠 Premise
+You are building the AI system for enemies in a blocky world. Each Enemy can attack differently depending on their type or situation.
+
+Your goal is to use the Strategy Pattern to model interchangeable attack behaviors.
+
+📦 Requirements
+Define a base interface AttackStrategy with a method like attack(target: str) -> None.
+
+Implement at least 3 concrete attack strategies:
+
+MeleeAttackStrategy: like a zombie or spider
+
+RangedAttackStrategy: like a skeleton or blaze
+
+ExplosiveAttackStrategy: like a creeper 🧨
+
+Create an Enemy class that uses an AttackStrategy.
+
+Allow the strategy to change at runtime (e.g. if enemy evolves).
+
+Implement a simple script that:
+
+Creates different enemies with different strategies
+
+Makes them attack a player
+
+Changes one of the enemy’s strategy at runtime and attacks again
+
+✅ Bonus Objectives
+Add a new strategy like PassiveStrategy (e.g. Enderman ignores player unless provoked).
+
+Create a StrategyFactory to select strategy based on config or enemy type.
+
+(Hard mode) Simulate a world tick loop where each enemy can act based on strategy.
+
+🧪 Sample Output (just for flavor)
+Zombie attacks Steve with a melee strike!
+Skeleton attacks Steve from afar with a bow!
+Creeper begins hissing... BOOM! Steve takes explosive damage!
+Enderman ignores Steve...
+
+Changing Creeper's attack style...
+Creeper now throws fireballs from a distance!
