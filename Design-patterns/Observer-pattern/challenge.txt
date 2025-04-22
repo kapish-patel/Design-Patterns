@@ -1,0 +1,26 @@
+🚨 Challenge: Weather Station Notification System
+🌦️ Scenario:
+You're building a backend for a smart weather station. The station collects temperature, humidity, and pressure data every few seconds. Different systems or services want to get notified when the weather data changes.
+
+🧱 Requirements:
+Subject: WeatherStation
+    Has methods to add/remove observers.
+    Has a method set_measurements(temp, humidity, pressure) that updates the data and notifies all observers.
+
+Observers:
+    PhoneDisplay → logs weather update to a phone screen.
+    WebsiteWidget → logs weather update to a web dashboard.
+    SmartHomeSystem → reacts to temperature changes (e.g., adjust AC/heater).
+
+Your Goal:
+    Implement the Observer Pattern.
+    Make each observer print a custom message when it gets updated.
+    Make the WeatherStation notify all observers when data changes.
+
+🧠 Bonus 1:
+    Allow different observers to subscribe only to specific types of data (e.g., only interested in temperature changes).
+
+💣 Bonus 2 (Advanced):
+    Make it event-driven with a WeatherEvent type system:
+    e.g., "high_temperature", "low_pressure"
+    Observers only get notified of events they subscribed to.

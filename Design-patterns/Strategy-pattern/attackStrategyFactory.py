@@ -12,7 +12,7 @@ class AttackStrategyFactory:
         self.attackStrategys = {
             'zombie': MeleeAttackStrategy(),
             'skeleton': RangedAttackStrategy(),
-            'creeper': ExplosiveAttackStrategy()
+            'creeper': ExplosiveAttackStrategy(),
         }
 
     def get_attack_strategy(self, attack_type: str)-> AttackStrategy:

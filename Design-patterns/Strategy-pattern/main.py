@@ -15,6 +15,7 @@ def main():
     zombie = Mob("Zombie", attackStrategyFactory.get_attack_strategy("zombie"))
     skeleton = Mob("Skeleton", attackStrategyFactory.get_attack_strategy("skeleton"))
     creeper = Mob("Creeper", attackStrategyFactory.get_attack_strategy("creeper"))
+    gast = Mob("Gast", attackStrategyFactory.get_attack_strategy("gast"))
 
     mobs = [zombie, skeleton, creeper]
 
