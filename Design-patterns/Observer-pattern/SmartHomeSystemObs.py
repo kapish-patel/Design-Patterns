@@ -12,7 +12,7 @@ class SmartHomeSystemObs(Observer):
     def print_observingChange(self) -> None:
         print("Smart home system: ")
         for obs in self.observing:
-            if obs == 'Temprature':
+            if obs == 'Temperature':
                 print(f"Temperature: {self.weatherStation.temperature}°C")
             elif obs == 'Humidity':
                 print(f"Humidity: {self.weatherStation.humidity}%")

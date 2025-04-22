@@ -12,7 +12,7 @@ class WebsiteWidgetObs(Observer):
     def print_observingChange(self) -> None:
         print("Website widget: ")
         for obs in self.observing:
-            if obs == 'Temprature':
+            if obs == 'Temperature':
                 print(f"Temperature: {self.weatherStation.temperature}°C")
             elif obs == 'Humidity':
                 print(f"Humidity: {self.weatherStation.humidity}%")

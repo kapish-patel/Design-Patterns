@@ -3,7 +3,7 @@ from Observer import Observer
 class WeatherStation:
     def __init__(self, temperature: int = 0, humidity: int = 0, pressure: int = 0) -> None:
         self.observers = {
-            'Temprature': [],
+            'Temperature': [],
             'Humidity': [],
             'Pressure': []
         }
@@ -37,7 +37,7 @@ class WeatherStation:
     def set_measurements(self, temperature: int = 0, humidity: int = 0, pressure: int = 0) -> None:
         if temperature != 0:
             self.temperature = temperature
-            self.notify_observers('Temprature')
+            self.notify_observers('Temperature')
         if humidity != 0:
             self.humidity = humidity
             self.notify_observers('Humidity')

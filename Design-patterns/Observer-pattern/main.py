@@ -34,7 +34,7 @@ def main():
             observing = []
             for obs in observing_choice:
                 if obs == '1':
-                    observing.append('Temprature')
+                    observing.append('Temperature')
                 elif obs == '2':
                     observing.append('Humidity')
                 elif obs == '3':
