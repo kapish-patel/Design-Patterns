@@ -1,0 +1,40 @@
+🎮 Challenge: Power-Ups for a Game Character (Using Decorator Pattern)
+🧍 Base Concept:
+You have a base Character class with:
+- get_description()
+- get_attack_power()
+
+Then you apply power-ups like:
+🔥 Fire Enchantment (adds fire damage)
+🛡️ Shield Buff (adds defense/armor)
+⚡ Speed Boost (increases speed or evasion)
+
+Each power-up wraps the character and enhances its behavior.
+
+🔧 You will implement:
+- BaseComponent: Character (abstract or interface)
+- ConcreteComponent: BasicHero
+- Decorator base class: PowerUpDecorator
+- ConcreteDecorators:
+- FireEnchantment
+- ShieldBuff
+- SpeedBoost
+
+🧠 Example Usage:
+hero = BasicHero()
+print(hero.get_description())  # "Hero with basic abilities"
+print(hero.get_attack_power())  # 10
+
+# Apply fire enchantment
+hero = FireEnchantment(hero)
+print(hero.get_description())  # "Hero with basic abilities + Fire Enchantment"
+print(hero.get_attack_power())  # 10 + 5 = 15
+
+# Apply shield buff
+hero = ShieldBuff(hero)
+print(hero.get_description())  # "Hero with basic abilities + Fire Enchantment + Shield Buff"
+# Defense or some stat might increase here
+
+✅ Goals:
+Demonstrate wrapping and stacking decorators.
+Show how each decorator enhances functionality without altering the base.
